@@ -238,7 +238,7 @@ export default class MarqueeText extends PureComponent<IMarqueeTextProps, IMarqu
             ref={this.textRef}
             numberOfLines={1}
             {...rest}
-            style={[style, { transform: [{ translateX: this.animatedValue }], width: null }]}
+            style={[style, { opacity: animating ? 1 : 0, transform: [{ translateX: this.animatedValue }], width: null }]}
           >
             {children}
           </Animated.Text>

@@ -11,9 +11,7 @@ This app is available on [Android](https://play.google.com/store/apps/details?id
 ## Installation
 
 ```
-npm install --save react-native-marquee
-or
-yarn add react-native-marquee
+npm install --save git+https://git@github.com/jilb1992/react-native-marquee
 ```
 
 ## Usage

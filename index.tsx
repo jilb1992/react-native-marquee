@@ -179,7 +179,7 @@ export default class MarqueeText extends PureComponent<IMarqueeTextProps, IMarqu
       this.distance = textWidth - containerWidth;
       
       //Parche para evitar el tick
-      if(this.distance == 1)
+      if(this.distance < 3)
         this.distance = 0
       
       this.contentFits = !MarqueeText.shouldAnimate(this.distance);
